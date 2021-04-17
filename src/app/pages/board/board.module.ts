@@ -11,6 +11,7 @@ import { CredidComponent } from './componets/credid/credid.component';
 import { MoveComponent } from './componets/move/move.component';
 import { IndexComponent } from './pages/index/index.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { MovimientoComponent } from './pages/movimiento/movimiento.component';
 
 
 
@@ -23,7 +24,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     IndexComponent,
     NavComponent,
     DialogComponent,
-    CreditDialogComponent
+    CreditDialogComponent,
+    MovimientoComponent
   ],
   imports: [
     CommonModule,

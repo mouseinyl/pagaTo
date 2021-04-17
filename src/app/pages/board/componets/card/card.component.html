@@ -2,11 +2,15 @@
 <div class="w100">
   <mat-card>
     <h3 class="title">Tarjetas</h3>
-    <mat-list role="list">
-      <mat-list-item role="listitem">Item 1</mat-list-item>
-      <mat-list-item role="listitem">Item 2</mat-list-item>
-      <mat-list-item role="listitem">Item 3</mat-list-item>
-    </mat-list>
+    <div *ngFor="let item of [1,1,1]">
+
+      <mat-list-item role="listitem" class="m-1">
+        <mat-icon>credit_card</mat-icon>
+        <span class="ml-2">Nombre</span>
+        <span class="ml-2">Fecha</span>
+        <span class="ml-2">-monto</span>
+      </mat-list-item>
+    </div>
     <div class="w-100 center">
       <button mat-raised-button  color="primary" (click)="open()">Agregar targeta</button>
     </div>
