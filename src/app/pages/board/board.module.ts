@@ -1,3 +1,4 @@
+import { setgetdialogComponent } from './pages/dialog/set-get-dialog.component';
 import { DialogComponent } from './componets/dialog/dialog/dialog.component';
 import { CreditDialogComponent } from './componets/credid/dialog/dialog.component';
 
@@ -25,6 +26,7 @@ import { MovimientoComponent } from './pages/movimiento/movimiento.component';
     NavComponent,
     DialogComponent,
     CreditDialogComponent,
+    setgetdialogComponent,
     MovimientoComponent
   ],
   imports: [
