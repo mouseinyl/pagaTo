@@ -1,3 +1,4 @@
+import { AuthService } from './../../../../services/auth.service';
 import { CreditDialogComponent } from './dialog/dialog.component';
 import { MatDialog } from '@angular/material/dialog';
 import { Component, OnInit } from '@angular/core';
@@ -8,8 +9,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./credid.component.scss']
 })
 export class CredidComponent implements OnInit {
-
-  constructor(private dialog:MatDialog) { }
+  public data:any={}
+  constructor(private dialog:MatDialog, private auth:AuthService) {
+    this.data=this.auth.usuario
+   }
 
   ngOnInit(): void {
 

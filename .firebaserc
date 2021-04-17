@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "pagato-bbf4a": {
+      "hosting": {
+        "paga": [
+          "pagato-bbf4a"
+        ]
+      }
+    }
+  }
+}

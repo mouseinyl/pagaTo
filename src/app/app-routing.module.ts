@@ -1,3 +1,4 @@
+import { AuthComponent } from './pages/auth/auth.component';
 import { AppComponent } from './app.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
@@ -12,8 +13,12 @@ const routes: Routes = [
           loadChildren: () => import('./pages/board/board.module').then(m => m.BoardModule)
         },
         {
+          path:"auth",
+          component:AuthComponent
+        },
+        {
           path:'**',
-          redirectTo:'board'
+          redirectTo:'auth'
         },
 
 
