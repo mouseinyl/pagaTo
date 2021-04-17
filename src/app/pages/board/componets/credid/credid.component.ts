@@ -2,6 +2,7 @@ import { AuthService } from './../../../../services/auth.service';
 import { CreditDialogComponent } from './dialog/dialog.component';
 import { MatDialog } from '@angular/material/dialog';
 import { Component, OnInit } from '@angular/core';
+import IUser from 'src/app/types/IUser';
 
 @Component({
   selector: 'app-credid',
@@ -9,18 +10,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./credid.component.scss']
 })
 export class CredidComponent implements OnInit {
-  public data:any={}
-  constructor(private dialog:MatDialog, private auth:AuthService) {
-    this.data=this.auth.usuario
-   }
-
-  ngOnInit(): void {
-
+  constructor(private dialog: MatDialog, public auth: AuthService) {
   }
 
-  open(){
-    const dialogRef = this.dialog.open(CreditDialogComponent,{width : '500px' ,height:'650px', data:{ namePlane: '', title:'Renombre el plan'}})
-    dialogRef.afterClosed().subscribe((resp) => {console.log(resp)});
+  ngOnInit(): void {
+    console.log(this.auth.usuario);
+  }
+
+  open() {
+    const dialogRef = this.dialog.open(CreditDialogComponent, { width: '500px', height: '650px', data: { namePlane: '', title: 'Renombre el plan' } })
+    dialogRef.afterClosed().subscribe((resp) => { console.log(resp) });
 
   }
 

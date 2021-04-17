@@ -1,1 +1,6 @@
-<router-outlet></router-outlet>
+
+<mat-progress-bar mode="indeterminate" *ngIf="isLoading; else outlet"></mat-progress-bar>
+<ng-template #outlet>
+  <router-outlet ></router-outlet>
+</ng-template>
+

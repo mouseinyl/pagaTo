@@ -2,14 +2,14 @@
 
 <div class="w100">
   <mat-card>
-    <h4 class="title">Hola {{this.data.nombre}}</h4>
+    <h4 class="title">Hola {{auth.usuario?.name}}</h4>
     <div class="flex">
       <div class="w40 center">
         <mat-icon class="icon"> account_balance_wallet</mat-icon>
       </div>
       <div class="w40">
         <h4 class="center sub-title">Balance</h4>
-        <p class="w100 center">$ 150.16</p>
+        <p class="w100 center">$ {{auth.usuario?.balance}}</p>
           <div class="center w100">
             <button mat-raised-button  color="primary" (click)="open()" >transferir</button>
           </div>

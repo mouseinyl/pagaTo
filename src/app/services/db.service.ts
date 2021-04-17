@@ -12,4 +12,9 @@ export class DbService {
     this.items =  db.collection('items').valueChanges()
   }
 
+   async addCard(name:string, number:string){
+
+  }
+
+
 }

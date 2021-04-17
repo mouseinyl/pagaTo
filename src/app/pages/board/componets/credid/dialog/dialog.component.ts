@@ -19,6 +19,9 @@ export class CreditDialogComponent implements OnInit {
 
     // this.data.namePlane = '';
   }
+
+
+
   onNoClick(): void {
     this.dialogRef.close();
   }

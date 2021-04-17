@@ -7,7 +7,7 @@ import {MatCardModule} from '@angular/material/card';
 import {MatListModule} from '@angular/material/list';
 import {MatInputModule} from '@angular/material/input';
 import {MatDialogModule} from '@angular/material/dialog';
-
+import {MatProgressBarModule} from '@angular/material/progress-bar';
 const Component = [
   MatToolbarModule,
   MatIconModule,
@@ -15,7 +15,8 @@ const Component = [
   MatCardModule,
   MatListModule,
   MatInputModule,
-  MatDialogModule
+  MatDialogModule,
+  MatProgressBarModule
 
 ]
 
