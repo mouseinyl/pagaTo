@@ -1,1 +1,106 @@
 /* You can add global styles to this file, and also import other style files */
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+  .title{
+    font-size: 2em !important;
+  }
+  .sub-title{
+    font-size: 1.5em !important;
+  }
+  .left{
+    float: left;
+  }
+  .right{
+    float: right;
+  }
+  .center{
+    text-align: center;
+  }
+  .jbetween{
+    justify-content: space-between;
+  }
+  .jevenly{
+    justify-content: space-evenly;
+  }
+  .jaround{
+    justify-content: space-around;
+  }
+
+  .mt-1{
+    margin-top: 1em;
+  }
+  .mt-2{
+    margin-top: 2em;
+  }
+  .mt-3{
+    margin-top: 3em;
+  }
+  .mt-4{
+    margin-top: 4em;
+  }
+  .mt-5{
+    margin-top: 5em;
+  }
+  .m-1{
+    margin: 1em;
+  }
+  .m-2{
+    margin: 2em;
+  }
+  .m-3{
+    margin: 3em;
+  }
+  .m-4{
+    margin: 4em;
+  }
+  .m-5{
+    margin: 5em;
+  }
+
+
+ .flex{
+  display: flex;
+ }
+ .row{
+    flex-direction: row;
+ }
+ .col{
+   flex-direction: column;
+ }
+.w100 {
+  width: 100%;
+}
+.w90 {
+  width: 90%;
+}
+.w80 {
+  width: 80%;
+}
+.w70 {
+  width: 70%;
+}
+.w60 {
+  width: 60%;
+}
+.w50 {
+  width: 50%;
+}
+.w40 {
+  width: 40%;
+}
+.w30 {
+  width: 30%;
+}
+.w20 {
+  width: 20%;
+}
+.w10 {
+  width: 10%;
+}

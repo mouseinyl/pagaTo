@@ -1,0 +1,16 @@
+<div class="right" (click)="onNoClick()">
+  <mat-icon>close</mat-icon>
+</div>
+<h1 mat-dialog-title class="title">Agregar Nueva Tarjeta</h1>
+<div mat-dialog-content>
+  <mat-form-field>
+    <h4></h4>
+    <!-- <mat-label>Nombre para el Plan</mat-label> -->
+    <input matInput [(ngModel)]="e" placeholder="Nombre del plan">
+  </mat-form-field>
+</div>
+<div mat-dialog-actions class="btn-content">
+  <button mat-raised-button (click)="onNoClick()">CANCELAR</button>
+
+  <button mat-raised-button *ngIf="e != ''"[mat-dialog-close]="e" cdkFocusInitial>LISTO</button>
+</div>

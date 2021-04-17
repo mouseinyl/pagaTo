@@ -1,0 +1,31 @@
+<div class="right" (click)="onNoClick()">
+  <mat-icon>close</mat-icon>
+</div>
+<h1 mat-dialog-title class="title">traferir</h1>
+<div mat-dialog-content class="flex col w80 center">
+  <div class="input center">
+    <mat-form-field class="input">
+      <input matInput #de placeholder="De:" >
+    </mat-form-field>
+  </div>
+  <div class="input center">
+    <mat-form-field class="input" >
+      <input matInput #para placeholder="Para:" >
+    </mat-form-field>
+  </div>
+  <div class="input center">
+    <mat-form-field class="input" >
+      <input matInput #monto placeholder="monton" type="number">
+    </mat-form-field>
+  </div>
+ <div class="flex col">
+  <p> importe de la trasferencia<span>{{monto.value}}</span></p>
+  <p> comision <span>{{5}}</span></p>
+  <p> recibira <span>{{monto.value  }}</span></p>
+ </div>
+</div>
+<div mat-dialog-actions class="btn-content">
+  <button mat-raised-button (click)="onNoClick()">CANCELAR</button>
+
+  <button mat-raised-button [mat-dialog-close]="{para:para.value,monto:monto.value,de:de.value}" cdkFocusInitial>LISTO</button>
+</div>

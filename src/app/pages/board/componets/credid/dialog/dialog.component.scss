@@ -1,0 +1,25 @@
+// .btn-content{
+//     display:flex;
+//     justify-content: space-around;
+//     & button{
+//         width: 12em;
+//     }
+// }
+// mat-form-field{
+//   width: 21em;
+// }
+// .title{
+//     font-weight: 600;
+//     text-align: center;
+// }
+// .right{
+//     float: right;
+// }
+:host ::ng-deep .mat-dialog-content{
+    display: flex;
+    justify-content: center;
+}
+
+.input{
+  width: 100%;
+}
